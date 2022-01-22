@@ -1,6 +1,8 @@
-import '../styles/App.css';
-import LocationDetails from './LocationDetails';
+import React from 'react';
 import PropTypes from 'prop-types';
+import '../styles/App.css';
+
+import LocationDetails from './LocationDetails';
 
 const App = ({ location }) => {
     const { city, country } = location;

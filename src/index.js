@@ -6,7 +6,7 @@ import location from './data/forecast.json';
 
 ReactDOM.render(
     <React.StrictMode>
-        <App location={location} />
+        <App location={location.location} />
     </React.StrictMode>,
     document.getElementById('root'),
 );
