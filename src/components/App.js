@@ -7,6 +7,7 @@ import ForecastSummaries from './ForecastSummaries';
 
 const App = ({ forecasts, location }) => (
     <div className="weather-app">
+        <h1>Weather app</h1>
         <LocationDetails city={location.city} country={location.country} />
         <ForecastSummaries forecasts={forecasts} />
     </div>
@@ -17,7 +18,7 @@ App.propTypes = {
         PropTypes.shape({
             date: PropTypes.number,
             description: PropTypes.string,
-            icon: PropTypes.number,
+            icon: PropTypes.string,
             temperature: PropTypes.shape({
                 max: PropTypes.number,
                 min: PropTypes.number,

@@ -19,14 +19,16 @@ const ForecastSummaries = ({ forecasts }) => (
 );
 
 ForecastSummaries.propTypes = {
-    forecasts: PropTypes.shape({
-        date: PropTypes.number.isRequired,
-        description: PropTypes.string.isRequired,
-        icon: PropTypes.number.isRequired,
-        temperature: PropTypes.shape({
-            min: PropTypes.number,
-            max: PropTypes.number,
+    forecasts: PropTypes.arrayOf(
+        PropTypes.shape({
+            date: PropTypes.number.isRequired,
+            description: PropTypes.string.isRequired,
+            icon: PropTypes.string.isRequired,
+            temperature: PropTypes.shape({
+                min: PropTypes.number,
+                max: PropTypes.number,
+            }).isRequired,
         }).isRequired,
-    }).isRequired,
+    ),
 };
 export default ForecastSummaries;
