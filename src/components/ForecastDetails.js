@@ -3,27 +3,23 @@ import PropTypes from 'prop-types';
 import moment from 'moment';
 // import WeatherIcon from 'react-icons-weather';
 
-const ForecastDetails = props => {
-    const { forecasts } = props;
+const ForecastDetails = ({ forecast }) => {
+    const { date, temperature, humidity, wind } = forecast;
     return (
         <div className="forecast-details" data-testid="forecast-detail">
             <div className="forecast-detail__date">
-                {moment(forecasts.date).format('ddd Do MMM')}
+                {moment(date).format('ddd Do MMM')}
             </div>
             <div className="forecast-details__temperature-max">
-                {forecasts.temperature.max}&deg;C
+                {temperature.max}&deg;C
             </div>
             <div className="forecast-details__temperature-min">
-                {forecasts.temperature.min}&deg;C
+                {temperature.min}&deg;C
             </div>
-            <div className="forecast-details__humidity">
-                {forecasts.humidity}%
-            </div>
-            <div className="forecast-details__wind-speed">
-                {forecasts.wind.speed}
-            </div>
+            <div className="forecast-details__humidity">{humidity}%</div>
+            <div className="forecast-details__wind-speed">{wind.speed}</div>
             <div className="forecast-details__wind-direction">
-                {forecasts.wind.direction}
+                {wind.direction}
                 {/* <WeatherIcon name="s" /> */}
             </div>
         </div>
@@ -33,7 +29,7 @@ const ForecastDetails = props => {
 export default ForecastDetails;
 
 ForecastDetails.propTypes = {
-    forecasts: PropTypes.shape({
+    forecast: PropTypes.shape({
         date: PropTypes.number.isRequired,
         humidity: PropTypes.number.isRequired,
         temperature: PropTypes.shape({

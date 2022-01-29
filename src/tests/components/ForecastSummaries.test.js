@@ -12,6 +12,7 @@ describe('ForecastSummaries', () => {
                 max: 22,
                 min: 12,
             },
+            onForecastSelect: () => {},
         },
         {
             date: 2222222,
@@ -21,18 +22,25 @@ describe('ForecastSummaries', () => {
                 max: 24,
                 min: 13,
             },
+            onForecastSelect: () => {},
         },
     ];
     it('renders correctly', () => {
         const { asFragment } = render(
-            <ForecastSummaries forecasts={validProps} />,
+            <ForecastSummaries
+                forecasts={validProps}
+                onForecastSelect={validProps.onForecastSelect}
+            />,
         );
         expect(asFragment()).toMatchSnapshot();
     });
 
     it('renders the correct number of ForecastSummary instances', () => {
         const { getAllByTestId } = render(
-            <ForecastSummaries forecasts={validProps} />,
+            <ForecastSummaries
+                forecasts={validProps}
+                onForecastSelect={validProps.onForecastSelect}
+            />,
         );
         expect(getAllByTestId('forecast-summary')).toHaveLength(2);
     });

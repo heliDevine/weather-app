@@ -11,13 +11,13 @@ import App from './components/App';
 //     document.getElementById('root'),
 // );
 
-import packageInfo from './data/forecast.json';
+// import packageInfo from './data/forecast.json';
 
 ReactDOM.render(
     <React.StrictMode>
         <App
-            forecasts={packageInfo.forecasts}
-            location={packageInfo.location}
+        // forecasts={packageInfo.forecasts}
+        // location={packageInfo.location}
         />
     </React.StrictMode>,
     document.getElementById('root'),
