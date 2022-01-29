@@ -5,7 +5,6 @@ exports[`ForecastSummaries renders correctly 1`] = `
   <div
     class="forecast-summaries"
   >
-     
     <div
       class="forecast-summary"
       data-testid="forecast-summary"
@@ -34,6 +33,11 @@ exports[`ForecastSummaries renders correctly 1`] = `
       >
         Stub description 1
       </div>
+      <button
+        type="button"
+      >
+        More details
+      </button>
     </div>
     <div
       class="forecast-summary"
@@ -63,6 +67,11 @@ exports[`ForecastSummaries renders correctly 1`] = `
       >
         Stub description2
       </div>
+      <button
+        type="button"
+      >
+        More details
+      </button>
     </div>
   </div>
 </DocumentFragment>
