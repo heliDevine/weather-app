@@ -1,41 +1,42 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ForecastDetails renders correctly 1`] = `
-<DocumentFragment>
+<div
+  className="forecast-details"
+  data-testid="forecast-detail"
+>
   <div
-    class="forecast-details"
-    data-testid="forecast-detail"
+    className="forecast-detail__date"
   >
-    <div
-      class="forecast-detail__date"
-    >
-      Thu 1st Jan
-    </div>
-    <div
-      class="forecast-details__temperature"
-    >
-      22°C
-    </div>
-    <div
-      class="forecast-details__temperature"
-    >
-      12°C
-    </div>
-    <div
-      class="forecast-summary__description"
-    >
-      50
-    </div>
-    <div
-      class="forecast-summary__description"
-    >
-      60
-    </div>
-    <div
-      class="forecast-summary__description"
-    >
-      nne
-    </div>
+    Thu 1st Jan
   </div>
-</DocumentFragment>
+  <div
+    className="forecast-details__temperature-max"
+  >
+    22
+    °C
+  </div>
+  <div
+    className="forecast-details__temperature-min"
+  >
+    12
+    °C
+  </div>
+  <div
+    className="forecast-details__humidity"
+  >
+    50
+    %
+  </div>
+  <div
+    className="forecast-details__wind-speed"
+  >
+    60
+  </div>
+  <div
+    className="forecast-details__wind-direction"
+  >
+    nne
+  </div>
+</div>
 `;
