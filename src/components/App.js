@@ -16,18 +16,25 @@ const App = () => {
         forecast => forecast.date === selectedDate,
     );
     useEffect(() => {
-        getForecast(setSelectedDate, setForecasts, setLocation);
+        getForecast(searchText, setSelectedDate, setForecasts, setLocation);
     }, []);
+
     const handleForecastSelect = date => setSelectedDate(date);
+
     const handleCitySearch = () => {
-        getForecast(setSelectedDate, setForecasts, setLocation);
+        getForecast(searchText, setSelectedDate, setForecasts, setLocation);
     };
+
     return (
         <div className="weather-app">
             {/* <h1>Weather app</h1> */}
 
             <LocationDetails city={location.city} country={location.country} />
-            <SearchForm setSearchText />
+            <SearchForm
+                searchText={searchText}
+                setSearchText={setSearchText}
+                onSubmit={handleCitySearch}
+            />
             <ForecastSummaries
                 forecasts={forecasts}
                 onForecastSelect={handleForecastSelect}

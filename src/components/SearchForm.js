@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const SearchForm = ({ searchText, setSearchText }) => {
+const SearchForm = ({ searchText, setSearchText, onSubmit }) => {
     const handleInputChange = event => setSearchText(event.target.value);
     return (
         <div className="search-form">
