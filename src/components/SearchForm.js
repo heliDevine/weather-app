@@ -10,7 +10,7 @@ const SearchForm = ({ searchText, setSearchText, onSubmit }) => {
                 onChange={handleInputChange}
                 value={searchText}
                 id="location-search"
-                placeholder="City, Country"
+                placeholder="Enter city"
             />
             <button type="submit" onClick={onSubmit}>
                 {' '}

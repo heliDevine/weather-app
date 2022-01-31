@@ -17,8 +17,9 @@ const ForecastDetails = ({ forecast }) => {
                 {temperature.min}&deg;C
             </div>
             <div className="forecast-details__humidity">{humidity}%</div>
-            <div className="forecast-details__wind-speed">{wind.speed}</div>
+            <div className="forecast-details__wind-speed">{wind.speed}mph</div>
             <div className="forecast-details__wind-direction">
+                wind direction:
                 {wind.direction}
                 {/* <WeatherIcon name="s" /> */}
             </div>

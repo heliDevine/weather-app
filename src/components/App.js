@@ -12,35 +12,58 @@ const App = () => {
     const [forecasts, setForecasts] = useState([]);
     const [location, setLocation] = useState({ city: '', country: '' });
     const [selectedDate, setSelectedDate] = useState(0);
+    const [errorMessage, setErrorMessage] = useState('');
+
     const selectedForecast = forecasts.find(
         forecast => forecast.date === selectedDate,
     );
     useEffect(() => {
-        getForecast(searchText, setSelectedDate, setForecasts, setLocation);
+        getForecast(
+            setErrorMessage,
+            searchText,
+            setSelectedDate,
+            setForecasts,
+            setLocation,
+        );
     }, []);
 
     const handleForecastSelect = date => setSelectedDate(date);
 
     const handleCitySearch = () => {
-        getForecast(searchText, setSelectedDate, setForecasts, setLocation);
+        getForecast(
+            setErrorMessage,
+            searchText,
+            setSelectedDate,
+            setForecasts,
+            setLocation,
+        );
     };
 
     return (
         <div className="weather-app">
-            {/* <h1>Weather app</h1> */}
+            <h1>Weather app</h1>
 
-            <LocationDetails city={location.city} country={location.country} />
+            <LocationDetails
+                city={location.city}
+                country={location.country}
+                errorMessage={errorMessage}
+            />
             <SearchForm
                 searchText={searchText}
                 setSearchText={setSearchText}
                 onSubmit={handleCitySearch}
             />
-            <ForecastSummaries
-                forecasts={forecasts}
-                onForecastSelect={handleForecastSelect}
-            />
-            {selectedForecast && (
-                <ForecastDetails forecast={selectedForecast} />
+
+            {!errorMessage && (
+                <>
+                    <ForecastSummaries
+                        forecasts={forecasts}
+                        onForecastSelect={handleForecastSelect}
+                    />
+                    {selectedForecast && (
+                        <ForecastDetails forecast={selectedForecast} />
+                    )}
+                </>
             )}
         </div>
     );
