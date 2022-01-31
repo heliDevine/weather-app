@@ -24,11 +24,12 @@ describe('ForecastDetails', () => {
             .toJSON();
         expect(testRenderer).toMatchSnapshot();
     });
-    // xit('Renders date correctly', () => {
-    //     const testRender = render(
-    //         <ForecastDetails temperature={validProps.forecast.date} />,
-    //     );
-    //     const { getByText } = testRender;
-    //     expect(getByText('date')).toBeInTheDocument;
-    // });
 });
+
+// xit('Renders date correctly', () => {
+//     const testRender = render(
+//         <ForecastDetails temperature={validProps.forecast.date} />,
+//     );
+//     const { getByText } = testRender;
+//     expect(getByText('date')).toBeInTheDocument;
+// });

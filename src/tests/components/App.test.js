@@ -3,7 +3,10 @@ import App from '../../components/App';
 import renderer from 'react-test-renderer';
 
 describe('Weather app', () => {
-    it('renders correctly', () => {});
+    it('renders correctly', () => {
+        const { asFragment } = render(<App />);
+        expect(asFragment(<App />)).toMatchSnapshot();
+    });
 
     // it shows selected city and country
     // it shows 5 day forecast
