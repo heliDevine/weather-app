@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@100;400&display=swap');
 
 body {
     margin: 0;
@@ -22,4 +23,16 @@ body {
 
 code {
     font-family: 'Poiret One', cursive;
+}
+h1 {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 400;
+    color: black;
+    margin: 20px;
+}
+h2 {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 400;
+    color: black;
+    margin: 20px;
 }

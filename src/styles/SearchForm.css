@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@100;400&display=swap');
+
+.search-form {
+    display: flex;
+    flex-direction: row;
+    flex-grow: inherit;
+    padding: 100px, 60px, 60px, 60px;
+    margin: 20px;
+}
+
+.button {
+    size: 100px;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 400;
+    color: red;
+}

@@ -1,3 +1,7 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@100;400&display=swap');
+
 /* .forecast-summary {
     padding: 10px, 0, 0, 0;
 } */
@@ -22,14 +26,14 @@
 }
 
 button {
-    font-family: 'Poiret One', bold;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 100;
     border-radius: 5px;
     color: white;
     padding: 20px, 10px, 5px, 10px;
     background-color: Transparent;
     display: flex;
-    /* background-blend-mode: lighten; */
     justify-content: space-between;
-    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
-        rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
