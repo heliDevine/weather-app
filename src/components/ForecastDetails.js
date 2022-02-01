@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import moment from 'moment';
+import '../styles/ForecastDetails.css';
 // import WeatherIcon from 'react-icons-weather';
 
 const ForecastDetails = ({ forecast }) => {
@@ -11,16 +12,19 @@ const ForecastDetails = ({ forecast }) => {
                 {moment(date).format('ddd Do MMM')}
             </div>
             <div className="forecast-details__temperature-max">
-                {temperature.max}&deg;C
+                {temperature.max} &deg;C
             </div>
             <div className="forecast-details__temperature-min">
-                {temperature.min}&deg;C
+                {temperature.min} &deg;C
             </div>
-            <div className="forecast-details__humidity">{humidity}%</div>
-            <div className="forecast-details__wind-speed">{wind.speed}mph</div>
+            <div className="forecast-details__humidity">
+                humidity: {humidity}%
+            </div>
+            <div className="forecast-details__wind-speed">
+                wind speed: {wind.speed}mph
+            </div>
             <div className="forecast-details__wind-direction">
-                wind direction:
-                {wind.direction}
+                wind direction: {wind.direction}
                 {/* <WeatherIcon name="s" /> */}
             </div>
         </div>

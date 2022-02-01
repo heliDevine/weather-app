@@ -5,6 +5,19 @@ body {
     font-family: 'Poiret One', cursive;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    color: white;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+        0deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(9, 44, 121, 1) 24%,
+        rgba(0, 212, 255, 1) 92%
+    );
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 40px, 20px, 40px, 20px;
 }
 
 code {

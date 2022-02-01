@@ -41,7 +41,7 @@ const App = () => {
 
     return (
         <div className="weather-app">
-            <h1>Weather app</h1>
+            <h1>WEATHER</h1>
 
             <LocationDetails
                 city={location.city}

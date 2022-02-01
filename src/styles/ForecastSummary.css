@@ -1,0 +1,35 @@
+/* .forecast-summary {
+    padding: 10px, 0, 0, 0;
+} */
+/* .forecast-detail__date {
+    font-size: 20px;
+    font-weight: 900;
+    padding: 5px;
+}
+.forecast-details__temperature-max {
+    font-weight: 900;
+} */
+
+/* .forecast-summary__date {
+    font-size: 15px;
+    font-weight: 900;
+    padding: 5px;
+} */
+.forecast-summary__date {
+    font-size: 15px;
+    font-weight: 900;
+    padding: 5px;
+}
+
+button {
+    font-family: 'Poiret One', bold;
+    border-radius: 5px;
+    color: white;
+    padding: 20px, 10px, 5px, 10px;
+    background-color: Transparent;
+    display: flex;
+    /* background-blend-mode: lighten; */
+    justify-content: space-between;
+    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+}
