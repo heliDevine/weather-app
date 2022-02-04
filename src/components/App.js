@@ -30,6 +30,7 @@ const App = () => {
     const handleForecastSelect = date => setSelectedDate(date);
 
     const handleCitySearch = () => {
+        console.log('helloo');
         getForecast(
             setErrorMessage,
             searchText,

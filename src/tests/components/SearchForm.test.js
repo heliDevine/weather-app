@@ -25,7 +25,7 @@ import { render } from '@testing-library/react';
 
 describe('SearchForm', () => {
     const validProps = {
-        searchText: () => {},
+        searchText: 'Stub description',
         setSearchText: () => {},
         onSubmit: () => {},
     };

@@ -12,6 +12,7 @@ const getForecast = (
     if (searchText) {
         endpoint += `?city=${searchText}`;
     }
+    setErrorMessage('');
     return axios
         .get(endpoint)
         .then(response => {

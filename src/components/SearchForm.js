@@ -13,7 +13,7 @@ const SearchForm = ({ searchText, setSearchText, onSubmit }) => {
                 id="location-search"
                 placeholder="Enter city"
             />
-            <button type="submit" onClick={onSubmit}>
+            <button className="search-button" type="submit" onClick={onSubmit}>
                 {' '}
                 Search{' '}
             </button>

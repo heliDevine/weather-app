@@ -8,9 +8,16 @@
     margin: 20px;
 }
 
-.button {
+.search-button {
     size: 100px;
     font-family: 'Fira Sans Condensed', sans-serif;
     font-weight: 400;
-    color: red;
+    color: black;
+    border-radius: 5px;
+    padding: 20px, 10px, 5px, 10px;
+    background-color: Transparent;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }

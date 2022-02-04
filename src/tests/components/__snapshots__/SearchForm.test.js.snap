@@ -7,9 +7,9 @@ exports[`SearchForm renders correctly 1`] = `
   >
     <input
       id="location-search"
-      placeholder="City, Country"
+      placeholder="Enter city"
       type="text"
-      value=""
+      value="Stub description"
     />
     <button
       type="submit"
