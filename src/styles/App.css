@@ -3,3 +3,9 @@
 .weather-app {
     margin: 0 20px;
 }
+.errorMessage {
+    font-family: 'Poiret One', cursive;
+    font-weight: 200;
+    font-size: 50px;
+    color: white;
+}

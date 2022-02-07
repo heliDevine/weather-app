@@ -14,7 +14,6 @@ You may also see any lint errors in the console.
 
 ### `npm test`
 
+![alt text](screenshots/Screenshotweather-app.png 'Weather search results')
 
-
-
-
+![alt text](screenshots/Screenshotweather-apperrormessage.png 'Weather app error when city is not found')

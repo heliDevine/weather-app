@@ -1,5 +1,6 @@
 /* eslint-disable no-console */
 import axios from 'axios';
+import React from 'react';
 
 const getForecast = (
     setErrorMessage,
@@ -23,7 +24,14 @@ const getForecast = (
         .catch(error => {
             const { status } = error.response;
             if (status === 404) {
-                setErrorMessage('City cannot be found, please try again!');
+                // setErrorMessage('City cannot be found, please try again!');
+
+                setErrorMessage(
+                    <p className="errorMessage">
+                        City cannot be found, please try again!{' '}
+                    </p>,
+                );
+
                 console.error('Location is not valid', error);
             }
             if (status === 500) {
