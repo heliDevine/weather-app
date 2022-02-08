@@ -12,6 +12,7 @@ exports[`SearchForm renders correctly 1`] = `
       value="Stub description"
     />
     <button
+      class="search-button"
       type="submit"
     >
        Search 

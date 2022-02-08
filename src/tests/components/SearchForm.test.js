@@ -1,27 +1,6 @@
 import React from 'react';
 import SearchForm from '../../components/SearchForm';
-import renderer from 'react-test-renderer';
-import { render } from '@testing-library/react';
-
-// describe('SearchForm', () => {
-//     const validProps = {
-//         searchText: () => {},
-//         setSearchText: () => {},
-//         onSubmit: () => {},
-//     };
-//     it('renders correctly', () => {
-//         const testRenderer = renderer
-//             .create(
-//                 <SearchForm
-//                     searchText={validProps.searchText}
-//                     setSearchText={validProps.setSearchText}
-//                     onSubmit={validProps.onSubmit}
-//                 />,
-//             )
-//             .toJSON();
-//         expect(testRenderer).toMatchSnapshot();
-//     });
-// });
+import { render, screen } from '@testing-library/react';
 
 describe('SearchForm', () => {
     const validProps = {
@@ -38,5 +17,17 @@ describe('SearchForm', () => {
             />,
         );
         expect(asFragment()).toMatchSnapshot();
+    });
+
+    it('Button renders with correct text', () => {
+        render(
+            <SearchForm
+                searchText={validProps.searchText}
+                setSearchText={validProps.setSearchText}
+                onSubmit={validProps.onSubmit}
+            />,
+        );
+        const buttonElement = screen.getByText('Search');
+        expect(buttonElement).toBeInTheDocument();
     });
 });

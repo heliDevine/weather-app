@@ -1,7 +1,6 @@
 import React from 'react';
 import ForecastDetails from '../../components/ForecastDetails';
 import renderer from 'react-test-renderer';
-import { render } from '@testing-library/react';
 
 describe('ForecastDetails', () => {
     const validProps = {
@@ -25,11 +24,3 @@ describe('ForecastDetails', () => {
         expect(testRenderer).toMatchSnapshot();
     });
 });
-
-// xit('Renders date correctly', () => {
-//     const testRender = render(
-//         <ForecastDetails temperature={validProps.forecast.date} />,
-//     );
-//     const { getByText } = testRender;
-//     expect(getByText('date')).toBeInTheDocument;
-// });

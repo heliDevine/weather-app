@@ -23,6 +23,7 @@ exports[`Weather app renders correctly 1`] = `
         value=""
       />
       <button
+        class="search-button"
         type="submit"
       >
          Search 
